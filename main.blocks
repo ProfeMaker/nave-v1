@@ -1,20 +1,20 @@
 <xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="=0+Yw%uDU%,O4N.JDW),">Player</variable><variable type="KIND_SpriteKind" id=").hL`6_0(rWXWNk2%04p">Projectile</variable><variable type="KIND_SpriteKind" id="wx,67SnN^jW@N{K=SA{u">Food</variable><variable type="KIND_SpriteKind" id="UJC?%unQg*=^l1(aiNcg">Enemy</variable><variable id="O47Sb7YtH9(iKdPaf9XV">nave</variable><variable id="FqfM`2?@}lB}.63dRZ0x">meteoro</variable><variable id="Bxv1(Y1Yh*u2-;MVxNf8">bala</variable><variable id="=^rhPqGOo!|!6o[JD86=">mySprite</variable></variables><block type="pxt-on-start" id="#EPzlqo0l;++6=^:U:.t" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="yf^:9d[0xe%$JN*?_J.a"><field name="VAR" id="O47Sb7YtH9(iKdPaf9XV">nave</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="u;=s)AY={Cnmw%iNm8=p"><value name="img"><shadow type="screen_image_picker" id="8Wf$F^C9|x0`whX;)t8s"><field name="img">img`
 . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-8 . . . . . . . . . . . . . . . 
-8 8 . . . . . . . . . . . . . . 
-. 8 8 8 8 8 8 8 8 8 8 . . . . . 
-. 5 8 8 8 8 8 8 8 8 8 8 . . . . 
-. 5 2 8 8 8 8 8 8 8 8 8 8 . . . 
-. 5 8 8 8 8 8 8 8 8 8 8 . . . . 
-. 8 8 8 8 8 8 8 8 8 8 . . . . . 
-8 8 . . . . . . . . . . . . . . 
-8 . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. b b b b b 5 5 5 5 5 5 5 b . . 
+. b d 5 b 5 5 5 5 5 5 5 5 b . . 
+. . b 5 5 b 5 d 1 f 5 d 4 f . . 
+. . b d 5 5 b 1 f f 5 4 4 c . . 
+b b d b 5 5 5 d f b 4 4 4 4 4 b 
+b d d c d 5 5 b 5 4 4 4 4 4 b . 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
 `</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="Q}PD*CWR;Q[{A!!I/zgl"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetsetstayinscreen" id="k$SH7$hc#5(7g)S^Getc"><value name="sprite"><block type="variables_get" id="BPkLQQUO!oDu!Km:m|+4"><field name="VAR" id="O47Sb7YtH9(iKdPaf9XV">nave</field></block></value><value name="on"><shadow type="toggleOnOff" id="*/~.3rB2a@)rX|ZZ:1}j"><field name="on">true</field></shadow></value><next><block type="game_control_sprite" id="jA=vy/s,Q8FuLa~*6A^)"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="+ztx0PJ?ZK2^:}T?a)Vj"><field name="VAR" id="O47Sb7YtH9(iKdPaf9XV">nave</field></block></value><value name="vx"><shadow type="math_number" id="Q/U$|6?ZToaobZvZ5jm_"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="VT:C!jaB^SF@`0;dE/un"><field name="NUM">100</field></shadow></value><next><block type="hudSetLife" id="@VWEf9m{:#)962j4}qJV"><value name="value"><shadow type="math_number" id="N94QG~fI^YhD1vW3KylN"><field name="NUM">3</field></shadow></value><next><block type="hudsetScore" id="A74,{4TjPs#N_tSeCipi"><value name="value"><shadow type="math_number" id="]T/|PGqm9E0:1HUaAx3~"><field name="NUM">0</field></shadow></value><next><block type="synth_set_volume" id="av1ZXFZz-8[YirtJQZu/"><value name="volume"><shadow type="math_number_minmax" id="|$/gS4sj,7$4L:%XA7jc"><mutation min="0" max="255" label="Volume" precision="0"/><field name="SLIDER">0</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="gameinterval" id="}9oI:I1Y1Mb{7pd~1hQ3" x="570" y="50"><value name="period"><shadow type="timePicker" id="G!DBd9u%t*{VFFcRZF@["><field name="ms">1000</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="Ntolqn~Ol/eTG=oa+HFV"><field name="VAR" id="FqfM`2?@}lB}.63dRZ0x">meteoro</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="E.$m)hSkpX-Y8XT`D-#n"><value name="img"><shadow type="screen_image_picker" id="QLnt$6p{:,10Jb-6|`y7"><field name="img">img`
 . . . . . . . . . c c 8 . . . . 
 . . . . . . 8 c c c f 8 c c . . 
